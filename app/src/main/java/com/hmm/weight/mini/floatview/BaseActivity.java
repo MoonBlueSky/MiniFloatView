@@ -7,18 +7,17 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.floatview.R;
-import com.hmm.weight.mini.floatview.weight.YeahFloatView;
+import com.hmm.weight.mini.floatview.weight.MiniFloatView;
 
 public class BaseActivity extends AppCompatActivity {
 
-    private YeahFloatView floatingView;
+    private MiniFloatView floatingView;
 
     @Override
     protected void onResume() {
         super.onResume();
         if (null == floatingView) {
-            floatingView = new YeahFloatView(this);
+            floatingView = new MiniFloatView(this);
             floatingView.circleImageView().setImageResource(R.mipmap.game);
             floatingView.showFloat();
             floatingView.setOnClickListener(new View.OnClickListener() {

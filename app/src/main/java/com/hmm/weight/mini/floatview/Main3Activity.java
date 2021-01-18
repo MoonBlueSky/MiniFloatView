@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.floatview.R;
-
 public class Main3Activity extends BaseActivity {
 
     @Override
@@ -16,7 +14,7 @@ public class Main3Activity extends BaseActivity {
         setContentView(R.layout.activity_main3);
 
         ImageView img = findViewById(R.id.img);
-        Glide.with(getApplicationContext()).load("https://goss.veer.com/creative/vcg/veer/800water/veer-309677502.jpg")
+        Glide.with(getApplicationContext()).load("https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20200415%2Fe1058f542fe249cea6eb434174946f76.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1613547508&t=bbdaadec87e6546e579ec534a998778b")
                 .into(img);
         findViewById(R.id.bt_next).setOnClickListener(new View.OnClickListener() {
             @Override

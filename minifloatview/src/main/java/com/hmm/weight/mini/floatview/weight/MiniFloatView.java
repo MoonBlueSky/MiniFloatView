@@ -25,7 +25,7 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class YeahFloatView extends RelativeLayout {
+public class MiniFloatView extends RelativeLayout {
     private static final String TAG = "FloatingView";
     private int inputStartX = 0;
     private int inputStartY = 0;
@@ -66,19 +66,19 @@ public class YeahFloatView extends RelativeLayout {
         return mIsShow;
     }
 
-    public YeahFloatView(Context context) {
+    public MiniFloatView(Context context) {
         this(context, null);
     }
 
-    public YeahFloatView(Context context, AttributeSet attrs) {
+    public MiniFloatView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public YeahFloatView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MiniFloatView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         mContext = context;
-        inflate(context,context.getResources().getIdentifier("yw_float_view","layout", context.getPackageName()) , this);
+        inflate(context,context.getResources().getIdentifier("hmm_mini_float_view","layout", context.getPackageName()) , this);
 
         mSdvCover = findViewById(context.getResources().getIdentifier("sdv_cover","id", context.getPackageName()));
         mHandler = new Handler(new Handler.Callback(){

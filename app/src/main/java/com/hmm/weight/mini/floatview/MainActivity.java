@@ -9,8 +9,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.floatview.R;
-import com.hmm.weight.mini.floatview.weight.YeahFloatView;
+import com.hmm.weight.mini.floatview.weight.MiniFloatView;
 
 public class MainActivity extends BaseActivity {
 
@@ -22,7 +21,7 @@ public class MainActivity extends BaseActivity {
 //设置底部导航栏不会遮挡布局
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         ImageView img = findViewById(R.id.img);
-        Glide.with(getApplicationContext()).load("https://goss.veer.com/creative/vcg/veer/800water/veer-134671947.jpg")
+        Glide.with(getApplicationContext()).load("https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20200415%2Fd5c3c79e73004ac8858b56d3795960d3.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1613547304&t=dd1b267bd1a327c2acd47166324526bc")
                 .into(img);
 
         findViewById(R.id.bt_next).setOnClickListener(new View.OnClickListener() {
@@ -30,7 +29,7 @@ public class MainActivity extends BaseActivity {
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,Main2Activity.class));
 
-                    final YeahFloatView  floatingView = new YeahFloatView(MainActivity.this);
+                    final MiniFloatView floatingView = new MiniFloatView(MainActivity.this);
                     floatingView.circleImageView().setImageResource(R.mipmap.game);
                     floatingView.showFloat();
                     floatingView.setOnClickListener(new View.OnClickListener() {
