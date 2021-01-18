@@ -452,15 +452,6 @@ public class MiniFloatView extends RelativeLayout {
     }
 
 
-    private void loadData() {
-        if (mLoading) {
-            return;
-        }
-        mLoading = true;
-        // TODO网络请求
-    }
-
-
 
 
 
