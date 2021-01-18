@@ -29,16 +29,7 @@ public class MainActivity extends BaseActivity {
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,Main2Activity.class));
 
-                    final MiniFloatView floatingView = new MiniFloatView(MainActivity.this);
-                    floatingView.circleImageView().setImageResource(R.mipmap.game);
-                    floatingView.showFloat();
-                    floatingView.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
 
-
-                        }
-                    });
             }
         });
         System.out.println();
